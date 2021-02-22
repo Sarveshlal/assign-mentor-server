@@ -1,0 +1,21 @@
+{
+  "name": "student-mentor",
+  "version": "1.0.0",
+  "description": "assigning students and mentors",
+  "main": "studment.js",
+  "scripts": {
+    "start": "node studment.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "student",
+    "mentor"
+  ],
+  "author": "sarveshlal",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}
