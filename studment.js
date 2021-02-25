@@ -86,7 +86,7 @@ app.post("/mentor", (req, res) => {
 //assigning students with mentor
 app.post("/student/mentor", (req, res) => {
   try {
-    var studment1 = [];
+    studment = [];
     for (var i in mentorlist) {
       for (var j in studentlist) {
         for (var k in mentorlist[i].students) {
@@ -101,13 +101,13 @@ app.post("/student/mentor", (req, res) => {
               mentor_name: c,
               mentor_staffid: d,
             };
-            studment1.push(adddata);
+            studment.push(adddata);
             console.log(a, b);
           }
         }
       }
     }
-    fs.writeFileSync("student&mentor.json", JSON.stringify(studment1));
+    fs.writeFileSync("student&mentor.json", JSON.stringify(studment));
     res.json({
       message: "added",
     });
